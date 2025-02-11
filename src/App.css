@@ -1,0 +1,304 @@
+/* Estilos generales */
+.app-home {
+  text-align: center;
+  background: linear-gradient(135deg, #ffcc33, #ff4444);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.app-home h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Estilos del Carousel */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 15px;
+  padding: 10px;
+  max-width: 80%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ocultar la barra de desplazamiento en navegadores modernos */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Tarjetas de Pokémon */
+.pokemon-card {
+  text-align: center;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 120px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-card:hover {
+  transform: scale(1.1);
+}
+
+.pokemon-img {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemon-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Botones de navegación */
+.nav-button {
+  background: white;
+  border: 2px solid #ffcc33;
+  color: #ff4444;
+  font-size: 1.5rem;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.nav-button:hover {
+  background: #ffcc33;
+  color: white;
+}
+
+.nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+
+.nav-button {
+  background-color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  font-size: 28px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #ffe066;
+  transform: scale(1.1);
+}
+
+.nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: scale(1);
+}
+
+
+.pokemon-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.pokemon-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.pokemon-name {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #333;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra los botones */
+  gap: 200px; /* Espacio entre botones */
+  width: 80%;
+  padding: 90px; /* Espacio blanco alrededor del contenedor */
+  margin: 20px auto;
+  background-color: #f8f8f8; /* Fondo claro para mayor separación visual */
+  border-radius: 12px; /* Bordes redondeados para mejor apariencia */
+}
+
+button {
+  background-color: #ffcc01;
+  color: #2b2b2b;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #d4a700;
+  transform: scale(0.98);
+}
+
+button[type="submit"] {
+  width: auto; /* Evita que el botón de submit ocupe el 100% */
+}
+/*FORMULARIO*/
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ffcc01;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: #e6b800;
+}
+
+button {
+  background-color: #ffcc01;
+  color: #2b2b2b;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #d4a700;
+  transform: scale(0.98);
+}
+
+
+
+
+.user-list {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.user-list h2 {
+  color: #ff4c4c;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.user-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-list li {
+  background: #f8f8f8;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease-in-out;
+}
+
+.user-list li:hover {
+  background: #ffebeb;
+}
+
+.user-list button {
+  background: #ff4c4c;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.user-list button:hover {
+  background: #cc0000;
+}
+
+
+
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+
